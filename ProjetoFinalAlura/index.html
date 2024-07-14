@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos/estilo.css">
+  <title>Decodificador</title>
+</head>
+
+<body>
+  <main class="decodificador">
+    <header class="logo">
+      <img src="./assets/Vector.svg">
+    </header>
+    <section class="decodificador_textos">
+      <section class="decodificador_input">
+        <textarea id="decodificador_texto" class="decodificador_label_textarea" placeholder="Digite seu texto"></textarea>
+      </section>
+      <section class="decodificador_button">
+        <div class="decodificador_button_label_info">
+        <label class="decodificador_button_label"><img class="decodificador_button_label_info_alert" src="./assets/Group 8.png" >Apenas letras minúsculas e sem acento.</label>
+      </div>
+      <div class="decodificador_buttons_div">
+        <button type="button" class="decodificador_buttons" id="decodificador_button_crip" onclick="criptografar()" >Criptografar</button>
+        <button type="button" class="decodificador_buttons" id="decodificador_button_decrip" onclick="desCriptografar()">Descriptografar</button>
+      </div>
+      </section>
+    </section>
+    <aside class="decodificador_mensagem">
+      <div id="imagem_id" class="decodificador_mensagem_imagem">
+        <img id="alerta" src="./assets/High quality products.svg"
+          alt="pessoa de joelhos com um lupa na frente do rosto, olhando para um diamante">
+        <h2 class="decodificador_mensagem_titulo">Nenhuma mensagem encontrada</h2>
+        <p class="decodificador_mensagem_texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <div id="copiar" class="decodificador_copiar">
+        <p id="decodificador_mensagem_mostrar" class="decodificador_mensagem_texto"></p>
+        <button type="button" onclick="copiarTexto()" class="botao_r">Copiar</button>
+      </div>
+    </aside>
+  </main>
+  <footer class="rodape">
+    <p  class="rodape_texto">Desenvolvido por <a class="rodape_texto" href="https://github.com/XandeSouz4"
+        target="_blank">Alexandre de Souza</a></p>
+  </footer>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
